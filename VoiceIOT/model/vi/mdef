@@ -1,0 +1,75 @@
+0.3
+9 n_base
+56 n_tri
+260 n_state_map
+57 n_tied_state
+27 n_tied_ci_state
+9 n_tied_tmat
+#
+# Columns definitions
+#base lft  rt p attrib tmat      ... state id's ...
+   AM   -   - -    n/a    0      0      1      2 N
+  BAT   -   - -    n/a    1      3      4      5 N
+   DO   -   - -    n/a    2      6      7      8 N
+  LED   -   - -    n/a    3      9     10     11 N
+ NHAP   -   - -    n/a    4     12     13     14 N
+ NHAY   -   - -    n/a    5     15     16     17 N
+NHIET   -   - -    n/a    6     18     19     20 N
+  SIL   -   - - filler    7     21     22     23 N
+  TAT   -   - -    n/a    8     24     25     26 N
+   AM  DO BAT e    n/a    0     27     28     29 N
+   AM  DO  DO e    n/a    0     27     28     29 N
+   AM  DO LED e    n/a    0     27     28     29 N
+   AM  DO NHIET e    n/a    0     27     28     29 N
+   AM  DO SIL e    n/a    0     27     28     29 N
+   AM  DO TAT e    n/a    0     27     28     29 N
+  BAT  AM LED b    n/a    1     30     31     32 N
+  BAT  DO LED b    n/a    1     30     31     32 N
+  BAT LED LED b    n/a    1     30     31     32 N
+  BAT NHAY LED b    n/a    1     30     31     32 N
+  BAT SIL LED b    n/a    1     30     31     32 N
+   DO  AM  AM b    n/a    2     34     36     38 N
+   DO  DO  AM b    n/a    2     34     36     38 N
+   DO LED  AM b    n/a    2     34     36     38 N
+   DO NHAY  AM b    n/a    2     34     36     38 N
+   DO NHIET BAT e    n/a    2     33     35     37 N
+   DO NHIET  DO e    n/a    2     33     35     37 N
+   DO NHIET LED e    n/a    2     33     35     37 N
+   DO NHIET NHIET e    n/a    2     33     35     37 N
+   DO NHIET SIL e    n/a    2     33     35     37 N
+   DO NHIET TAT e    n/a    2     33     35     37 N
+   DO SIL  AM b    n/a    2     34     36     38 N
+  LED  AM NHAP b    n/a    3     40     42     44 N
+  LED BAT BAT e    n/a    3     39     41     43 N
+  LED BAT  DO e    n/a    3     39     41     43 N
+  LED BAT LED e    n/a    3     39     41     43 N
+  LED BAT NHIET e    n/a    3     39     41     43 N
+  LED BAT SIL e    n/a    3     39     41     43 N
+  LED BAT TAT e    n/a    3     39     41     43 N
+  LED  DO NHAP b    n/a    3     40     42     44 N
+  LED LED NHAP b    n/a    3     40     42     44 N
+  LED NHAY NHAP b    n/a    3     40     42     44 N
+  LED SIL NHAP b    n/a    3     40     42     44 N
+  LED TAT BAT e    n/a    3     39     41     43 N
+  LED TAT  DO e    n/a    3     39     41     43 N
+  LED TAT LED e    n/a    3     39     41     43 N
+  LED TAT NHIET e    n/a    3     39     41     43 N
+  LED TAT SIL e    n/a    3     39     41     43 N
+  LED TAT TAT e    n/a    3     39     41     43 N
+ NHAP LED NHAY i    n/a    4     45     46     47 N
+ NHAY NHAP BAT e    n/a    5     48     49     50 N
+ NHAY NHAP  DO e    n/a    5     48     49     50 N
+ NHAY NHAP LED e    n/a    5     48     49     50 N
+ NHAY NHAP NHIET e    n/a    5     48     49     50 N
+ NHAY NHAP SIL e    n/a    5     48     49     50 N
+ NHAY NHAP TAT e    n/a    5     48     49     50 N
+NHIET  AM  DO b    n/a    6     51     52     53 N
+NHIET  DO  DO b    n/a    6     51     52     53 N
+NHIET LED  DO b    n/a    6     51     52     53 N
+NHIET NHAY  DO b    n/a    6     51     52     53 N
+NHIET SIL  DO b    n/a    6     51     52     53 N
+  TAT  AM LED b    n/a    8     54     55     56 N
+  TAT  DO LED b    n/a    8     54     55     56 N
+  TAT LED LED b    n/a    8     54     55     56 N
+  TAT NHAY LED b    n/a    8     54     55     56 N
+  TAT SIL LED b    n/a    8     54     55     56 N
